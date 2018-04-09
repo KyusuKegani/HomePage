@@ -1216,18 +1216,55 @@ fieldset[disabled] .s-btn {
   }
 }
 
+
+/* Title
+------------------------------ */
+.s-header__title {
+  position: relative;
+  z-index: 9999;
+  width: 100%;
+  height: auto;
+  float: right;
+}
+
+.s-header__title-link {
+  display: inline-block;
+  padding: 1rem 0;
+}
+
+.s-header__title-link:focus, .s-header__title-link:hover {
+  text-decoration: none;
+}
+
+.s-header__title-img-default, .s-header__title-img-shrink {
+  display: block;
+}
+
+.s-header__title-img-default {
+  opacity: 1;
+}
+
+.s-header__title-img-shrink {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+@media (max-width: 122.9em) {
+  .s-header__title {
+    width: auto;
+    height: auto;
+    float: right;
+  }
+}
+
+
 /* Trigger
 ------------------------------ */
 .s-header__trigger {
-  position: relative;
-  z-index: 9999;
-  width: 3.125rem;
-  height: 3.125rem;
+  width: auto;
+  height: auto;
   float: right;
-  overflow: hidden;
-  transition-duration: 500ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
 /* Trigger Icon */
@@ -1621,6 +1658,30 @@ fieldset[disabled] .s-btn {
 }
 
 .s-header__shrink .s-header__logo-img-shrink {
+  opacity: 1;
+}
+
+/* Title */
+.s-header__shrink.-is-open .s-header__title-img-default {
+  opacity: 1;
+}
+
+.s-header__shrink.-is-open .s-header__title-img-shrink {
+
+  opacity: 0;
+}
+
+.s-header__shrink .s-header__navbar {
+  background: #fff;
+}
+
+.s-header__shrink .s-header__title-img-default {
+  opacity: 0;
+}
+
+.s-header__shrink .s-header__title-img-shrink {
+  top:0px;
+  right:0px;
   opacity: 1;
 }
 
