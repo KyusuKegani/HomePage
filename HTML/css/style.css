@@ -38,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   margin-bottom: 0.75rem;
 }
 
@@ -2433,4 +2433,17 @@ fieldset[disabled] .s-btn {
 
 .s-swiper__pagination-v1--dark .swiper-pagination-bullet-active {
   background: #13b1cd;
+}
+
+/* Block Animation */
+.effect i {
+  height: 120px;
+  padding: 20px;
+  font-size: 100px;
+  transition: .8s;
+} 
+.effect div {
+  margin: auto;
+  transition: .8s;
+  transition-delay: .2s;
 }

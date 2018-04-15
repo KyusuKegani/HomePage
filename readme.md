@@ -4,6 +4,8 @@
 # 使用テンプレート
 以下のテンプレートを使用しています。
 
+* Title: Megakit 
+* URL: http://keenthemes.com/megakit-free-ultimate-multi-purpose-bootstrap-site-template/
 * Author: 		KeenThemes
 * Website: 		http://www.keenthemes.com/
 * Contact: 		support@keenthemes.com

@@ -130,3 +130,33 @@ var Global = function() {
 $(document).ready(function() {
   Global.init();
 });
+
+/* Block Animation */
+// 要素の取得
+var wrap = document.getElementsByClassName("wrap")[0];
+var cover = wrap.getElementsByClassName("cover")[0];
+var text = wrap.getElementsByTagName("p")[0];
+
+// アニメーション
+var timeline = anime.timeline();
+timeline
+    .add({
+        targets: cover,
+        duration: 500,
+        easing: "easeInExpo",
+        begin: () => {
+            cover.style.transformOrigin = "left";
+            text.style.visibility = "hidden";
+        },
+        scaleX: [0, 1]
+    })
+    .add({
+        targets: cover,
+        duration: 500,
+        easing: "easeOutExpo",
+        begin: () => {
+            cover.style.transformOrigin = "right";
+            text.style.visibility = "visible";
+        },
+        scaleX: [1, 0]
+    });

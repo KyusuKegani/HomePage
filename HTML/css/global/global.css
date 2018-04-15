@@ -1310,11 +1310,11 @@
   clear: both;
 }
 
-@media (min-width: 48em) {
+ @media (min-width: 48em) {
   .g-container--sm {
     width: 750px;
   }
-}
+} 
 
 /* Medium container */
 .g-container--md {
